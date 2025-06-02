@@ -67,7 +67,7 @@ jobs:
           SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
 
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@v0.16.0
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           scan-type: fs
           ignore-unfixed: true
