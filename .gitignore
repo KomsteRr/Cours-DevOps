@@ -19,6 +19,7 @@ coverage/
 # Build
 dist/
 build/
+data/
 
 # VSCode
 .vscode/
