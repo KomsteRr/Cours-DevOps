@@ -1,0 +1,23 @@
+meta {
+  name: Login User
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/v1/user/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFybmF1ZEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc0ODg2ODkwOSwiZXhwIjoxNzQ4ODY4OTk5fQ.b6_XzmupGyx0i4RbUbEKKiPL9XzJHioNhpbK1MgMcfA
+}
+
+body:json {
+  {
+    "email":"arnaud@gmail.com",
+    "password":"caroline"
+  }
+}
